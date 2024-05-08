@@ -1,0 +1,33 @@
+{
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-interaction=nonstopmode",
+                "-synctex=1",
+                "-file-line-error",
+                "-pdf",
+                "-lualatex",
+                "-outdir=out",
+                "%DOC%"
+            ],
+            "env":{
+                "TEXMFHOME": "%DIR%/.cache",
+                "TEXMFVAR": "%DIR%/.cache/texmf-var",
+            }
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk",
+            ]
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    }
+}
