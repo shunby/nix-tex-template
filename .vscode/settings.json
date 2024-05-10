@@ -27,7 +27,21 @@
             ]
         }
     ],
+    "latex-workshop.latexindent.args": [
+		"-c",
+		"%DIR%/",
+		"%TMPFILE%",
+		"-l",
+		"%DIR%/latexindent.yaml",
+		"-r"
+    ],
+    "latex-workshop.latex.build.forceRecipeUsage": false,
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
+    },
+
+    "[latex]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
     }
 }
